@@ -1,0 +1,8 @@
+<% if @words.nil? -%>
+    $( ".words" ).html( "<p>Test</p>" );
+<% elsif @words.empty? -%>
+    $( ".words" ).html( "<p>Sorry, no valid words found for the given " +
+    "input</p>" );
+<% else -%>
+    $( ".words" ).html( "<%= j (@words[0]) %>" );
+<% end -%>
