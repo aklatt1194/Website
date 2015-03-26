@@ -7,6 +7,6 @@ class RegexWordFinderController < ApplicationController
 
   def word_search
     @words = []
-    @words << params[:q]
+    @words << params[:pattern]
   end
 end

@@ -15,3 +15,104 @@
  */
 @import "bootstrap-sprockets"
 @import "bootstrap"
+@import "_colors"
+
+/* Navbar coloring */
+$bgDefault      : $black
+$bgHighlight    : $black
+$colDefault     : $purple
+$colHighlight   : $green
+$dropDown       : true
+.navbar-default
+  background-color: $bgDefault
+  border-color: $gray
+  .navbar-brand
+    color: $colDefault
+    &:hover, &:focus
+      color: $colHighlight
+  .navbar-text
+    color: $colDefault
+  .navbar-nav
+    > li
+      > a
+        color: $colDefault
+        &:hover, &:focus
+          color: $colHighlight
+      @if $dropDown
+        > .dropdown-menu
+          background-color: $bgDefault
+          > li > a
+            color: $colDefault
+            &:hover, &:focus
+              color: $colHighlight
+              background-color: $bgHighlight
+          .divider
+            background-color: $bgHighlight
+    > .active
+      > a, > a:hover, > a:focus
+        color: $colHighlight
+        background-color: $bgHighlight
+    > .open
+      > a, > a:hover, > a:focus
+        color: $colHighlight
+        background-color: $bgHighlight
+  .navbar-toggle
+    border-color: $bgHighlight
+    &:hover, &:focus
+      background-color: $bgHighlight
+    .icon-bar
+      background-color: $colDefault
+  .navbar-collapse,
+  .navbar-form
+    border-color: $colDefault
+  .navbar-link
+    color: $colDefault
+    &:hover
+      color: $colHighlight
+@media (max-width: 767px)
+  .navbar-default .navbar-nav .open .dropdown-menu
+    > li > a
+      color: $colDefault
+      &:hover, &:focus
+        color: $colHighlight
+    > .active
+      > a, > a:hover, > a:focus
+        color: $colHighlight
+        background-color: $bgHighlight
+
+/* General */
+body
+  color: $purple2
+  background-color: $gray
+
+.jumbotron
+  color: $black
+  background-color: $silver
+
+/* Buttons */
+.btn
+  color: $purple
+  background-color: $black
+  border-color: $purple
+  &:hover, &:focus
+    color: $green
+    background-color: $black
+    border-color: $green
+
+/* Form Related */
+.form-control
+  color: $green
+  background-color: $black
+
+// Placeholder text
+.form-control::-webkit-input-placeholder
+  color:    $purple
+.form-control:-moz-placeholder
+  color:    $purple
+  opacity:  1
+.form-control::-moz-placeholder
+  color:    $purple
+  opacity:  1
+.form-control:-ms-input-placeholder
+  color:    $purple
+

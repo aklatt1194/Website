@@ -1,8 +1,23 @@
-<%= form_tag('word_search', :method => "get", :remote => true) do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Search") %>
-<% end %>
+
+<div class='jumbotron'>
+
+    <%= form_tag('word_search', :method => 'get', :remote => true) do %>
+        <div class="form-group">
+            <%= label_tag(:pattern, 'Word Pattern:') %>
+            <%= text_field_tag(:pattern, nil, class: 'form-control',
+                               placeholder: 'Enter Pattern to Match: ' +
+                '(Use _ to Indicate a Position Where One of Your Letters ' +
+                'Should Go)') %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:letters, 'Your Letters:') %>
+          <%= text_field_tag(:letters, nil, placeholder: 'Enter The Letters You' +
+          ' Have Available (Use _ to Match Any Letter)', class: 'form-control') %>
+        </div>
+        <%= submit_tag('Find Words', class: 'btn btn-default') %>
+    <% end %>
+</div>
+
 <div class="words">
 
 </div>
