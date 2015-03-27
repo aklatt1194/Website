@@ -26,11 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="regex_word_finder_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="regex_word_finder_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/regex_word_finder_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38538206" vertical-offset="56" max-vertical-offset="1386">
+            <state vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="1386">
               <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css.sass" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4" vertical-offset="1750" max-vertical-offset="2466">
+              <caret line="110" column="15" selection-start-line="110" selection-start-column="15" selection-end-line="110" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -63,8 +73,8 @@
         <option value="$PROJECT_DIR$/app/views/regex_word_finder/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/_custom-classes.sass" />
         <option value="$PROJECT_DIR$/app/views/regex_word_finder/word_search.js.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.sass" />
         <option value="$PROJECT_DIR$/app/controllers/regex_word_finder_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.sass" />
       </list>
     </option>
   </component>
@@ -513,14 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5878261" vertical-offset="1750" max-vertical-offset="2448">
-          <caret line="116" column="30" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/regex_word_finder/word_search.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09391304" vertical-offset="0" max-vertical-offset="575">
@@ -539,8 +541,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/regex_word_finder_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38538206" vertical-offset="56" max-vertical-offset="1386">
+        <state vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="1386">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4" vertical-offset="1750" max-vertical-offset="2466">
+          <caret line="110" column="15" selection-start-line="110" selection-start-column="15" selection-end-line="110" selection-end-column="15" />
           <folding />
         </state>
       </provider>
