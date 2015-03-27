@@ -1,6 +1,28 @@
+<h1>Regex Word Search</h1>
+<div class='jumbotron'>
+    <div class='container paragraph'>
+        <p class='text-justify'>Search the dictionary to find all words that
+          match a given pattern.
+          A pattern consists of letters, _'s and *'s. Letters are fixed in the
+          pattern, but a _ character represents a spot filled by one of your
+          letters. For example, if your letters were "abc" and the pattern
+          you wanted to match was "_ _ _ k" then the result would be the word
+          "back". A * character is used to represent a sequence of any
+          number of your letters (possibly 0). For example, if your letters
+          were "se" and the pattern was "* a t *" then some of the results
+          would include: "eat", "seat", "eats", "at" etc.Each letter is
+          allowed to be used once for each time that it appears. For example,
+          with the letters "hs" and the pattern "_ i *", the word "hiss"
+          would <strong>NOT</strong> be returned.
+        </p>
+        <p>
+          Enjoy!
+        </p>
+      </div>
+</div>
 
 <div class='jumbotron'>
-
+    <h2>Word Search</h2>
     <%= form_tag('word_search', :method => 'get', :remote => true) do %>
         <div class="form-group">
             <%= label_tag(:pattern, 'Word Pattern:') %>
@@ -18,6 +40,8 @@
     <% end %>
 </div>
 
-<div class="words">
+<div class='container'>
+  <div class='words-area'>
 
+  </div>
 </div>

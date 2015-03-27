@@ -1,7 +1,9 @@
+$(".words-area").html("<div class='jumbotron words'></div>")
 <% if @words.nil? -%>
-    $( ".words" ).html( "<p>Test</p>" );
+    $( ".words" ).html( "<p class='.text-danger'>An unexpected error has " +
+    "occured</p>" );
 <% elsif @words.empty? -%>
-    $( ".words" ).html( "<p>Sorry, no valid words found for the given " +
+    $( ".words" ).html( "<p class='.text-danger'>Sorry, no valid words found for the given " +
     "input</p>" );
 <% else -%>
     $( ".words" ).html( "<%= j (@words[0]) %>" );
