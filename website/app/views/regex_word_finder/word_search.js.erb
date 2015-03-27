@@ -1,4 +1,5 @@
 $(".words-area").html("<div class='jumbotron words'></div>")
+$( ".words" ).html("<h2> Results: </h2>");
 <% if @words.nil? -%>
     $( ".words" ).html( "<p class='.text-danger'>An unexpected error has " +
     "occured</p>" );
@@ -6,5 +7,10 @@ $(".words-area").html("<div class='jumbotron words'></div>")
     $( ".words" ).html( "<p class='.text-danger'>Sorry, no valid words found for the given " +
     "input</p>" );
 <% else -%>
-    $( ".words" ).html( "<%= j (@words[0]) %>" );
+    $( ".words").append("<ul class='list-group'>");
+    <% @words.each do |word| %>
+        $( ".words" ).append( "<li class='list-group-item'><%= j (word)%>" +
+        "</li>");
+    <% end -%>
+    $( ".words").append("</ul>");
 <% end -%>
