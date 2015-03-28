@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'coming_soon/index'
+
   root 'home#index'
 
   get 'regex_word_finder/word_search'
