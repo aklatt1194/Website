@@ -1,0 +1,39 @@
+# bundler state
+/.bundle
+/vendor/bundle/
+/vendor/ruby/
+
+# minimal Rails specific artifacts
+website/db/*.sqlite3
+website/db/*.sqlite3-journal
+website/log/*
+website/tmp/*
+
+# various artifacts
+website/**.war
+website/*.rbc
+website/*.sassc
+website/.redcar/
+website/.sass-cache
+website/config/config.yml
+website/config/database.yml
+website/coverage.data
+website/coverage/
+website/db/*.javadb/
+website/public/cache
+website/public/stylesheets/compiled
+website/public/system/*
+website/spec/tmp/*
+website/cache
+website/capybara*
+website/capybara-*.html
+website/gems
+website/specifications
+website/.zeus.sock
+
+# RubyMine project files
+**.idea
+
+# Environment files that may contain sensitive data
+**.env
+**.powenv
