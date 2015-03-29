@@ -1,0 +1,58 @@
+sudo yum install git
+sudo yum install ruby-devel
+sudo yum install gcc
+sudo yum install zlib-devel
+sudo yum install libxml2 libxml2-devel libxslt libxslt-devel
+sudo yum install sqlite-devel
+gem install nokogiri -- --use-system-libraries
+gem install bundler
+gem install rails
+gem install io-console
+bundle install
+
+sudo yum install httpd
+sudo chkconfig httpd on
+#sudo nano /etc/httpd/conf/httpd.conf
+#uncomment the line containing: NameVirtualHost *:80
+service httpd start
+
+sudo yum install curl-devel httpd-devel 
+gem install passenger
+sudo yum install openssl-devel
+sudo yum install gcc-c++
+# IF LESS THAN 1GB MEMORY
+sudo dd if=/dev/zero of=/swap bs=1M count=1024
+sudo mkswap /swap
+sudo swapon /swap
+#ENDIF
+passenger-install-apache2-module
+#Follow instructions
+#Place output at bottom of /etc/httpd/conf/httpd.conf file
+
+
+# Move rails app to /var/www/html
+# Add gem 'therubyracer' to Gemfile
+bundle install
+rake db:migrate
+
+
+#BEGIN Place at bottom of /etc/httpd/conf/httpd.conf file
+RackEnv development
+
+
+
+<VirtualHost *:80> 
+ ServerName www.aklatt.com 
+ # !!! Be sure to point DocumentRoot to 'public'! 
+ DocumentRoot /var/www/html/Website/website/public 
+ <Directory /var/www/html/Website/website/public> 
+ # This relaxes Apache security settings. 
+ AllowOverride all 
+ # MultiViews must be turned off.
+ Options -MultiViews 
+ </Directory> 
+</VirtualHost> 
+
+#END PLACE
+
+sudo service httpd restart 
